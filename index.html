@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>网易考拉海购</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http//www.css3china.com/wp-content/iconfont/demo.html">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .container{
+               
+                margin-bottom: 20px;
+            }
+            ul.nav-tabs{
+         
+         margin-bottom: 0px;
+        
+    }/*定义导航栏面板*/
+  
+ ul span a:only-child{
+        background: none;
+    }
+  ul span:hover>ul{
+        display: block;  
+    }
+    ul span ul li a:only-child{
+        background: none;
+    }
+    ul span ul li:hover>ul{
+        display: block;  
+    }
+    .fa fa-question-circle{
+        paddi-
+    }
+    ul.nav-tabs li a{
+        padding-left: 50px;
+        padding-right: 50px;
+    }/*定义导航栏每个元素*/
+    
+    ul.nav-tabs li a:only-child{
+        background: none;
+    }/*定义导航栏每个元素*/
+   ul.nav-tabs li:hover > ul {
+  display: block; /* 滑鼠滑入母選單後，顯示子選單 */}
+   .dropdown-menu li:hover .floating_left_01{
+       display:block;
+    
+   }
+   .dropdown-menu li:hover .floating_left_02{
+       display:block;
+    
+   }
+   .dropdown-menu li:hover .floating_left_03{
+       display:block;
+    
+   }
+   .floating_left_01{position:absolute;left:-120px;top:5px;width:100px;height:100px;display:none; }
+   .floating_left_02{position:absolute;left:-120px;top:30px;width:100px;height:100px;display:none; }
+    .floating_left_03{position:absolute;left:-120px;top:55px;width:100px;height:100px;display:none; }
+  
+    .dropdown-menu li:hover .floating_right{
+         display:block;
+    }
+    .floating_right {
+        position:absolute;right:-600px;top:5px;width:600px;height:260px;display:none;background: #FFFFFF;padding-left:50px;
+    }
+    
+  body{margin:0;height:2000px;}
+dl,dd,dt{margin:0;padding:0;}
+a{ text-decoration:none;}
+
+.floating_ck{position:fixed;right:20px;top:30%;}
+.floating_ck dl dd{position:relative;width:100px;height:40px;background-color:#FF6A6A;border-bottom:solid 1px #555666;text-align:center;background-repeat:no-repeat;background-position:center 20%;cursor:pointer;}
+.floating_ck dl dd:hover{background-color:#FF4040;border-bottom:solid 1px #a40324;}
+
+
+.floating_ck dd span{color:#FFFFFF;display:block;padding-top:10px;padding-bottom: 10px;}
+
+
+   
+        </style>
+        <script>
+          function gotoTop(acceleration,stime) {
+   acceleration = acceleration || 0.1;
+   stime = stime || 10;
+   var x1 = 0;
+   var y1 = 0;
+   var x2 = 0;
+   var y2 = 0;
+   var x3 = 0;
+   var y3 = 0; 
+   if (document.documentElement) {
+       x1 = document.documentElement.scrollLeft || 0;
+       y1 = document.documentElement.scrollTop || 0;
+   }
+   if (document.body) {
+       x2 = document.body.scrollLeft || 0;
+       y2 = document.body.scrollTop || 0;
+   }
+   var x3 = window.scrollX || 0;
+   var y3 = window.scrollY || 0;
+ 
+   // ��������ҳ�涥����ˮƽ����
+   var x = Math.max(x1, Math.max(x2, x3));
+   // ��������ҳ�涥���Ĵ�ֱ����
+   var y = Math.max(y1, Math.max(y2, y3));
+ 
+   // �������� = Ŀǰ���� / �ٶ�, ��Ϊ����ԭ��ԽС, �ٶ��Ǵ��� 1 ����, ���Թ��������Խ��ԽС
+   var speeding = 1 + acceleration;
+   window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+ 
+   // ������벻Ϊ��, �������ú���
+   if(x > 0 || y > 0) {
+       var run = "gotoTop(" + acceleration + ", " + stime + ")";
+       window.setTimeout(run, stime);
+   }
+}
+
+</script>
+</head>
+<body>
+      <!-- 顶端 -->
+    <div class="container">
+        <div class="row" style="background:#f2f2f2;padding-top: 2px;">
+            <div class="col-md-4" >
+                 <ul>
+                    <span>考拉欢迎你</span>
+                    <span><a href="https://wpysevkk.github.io/_wZD/login.html" style="color:#000000">登陆</a></span>
+                    <span>|</span>
+                    <span><a href="https://wpysevkk.github.io/_wZD/" style="color:#000000">免费注册</a></span>
+                    <span class="dropdown">
+                        <i class="fa fa-mobile" aria-hidden="true"style="color:#FF0000"></i> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"   style="color:#000000">手机免费注册 </a>
+                    
+            <ul class="dropdown-menu">
+					<li><img class="img-responsive center-block" src="picture/xiazaishouji.jpg" ></li>
+                                        <li><a class="text-center"style="color:#FF0000" href="#">下载APP</a></li>
+                                        <li><a class="text-center"style="color:#FF0000" href="#">领1000元红包</a></li>
+					
+                </ul></span>
+                 </ul>
+            </div>
+            <div class="col-md-8" style="padding-left:100px;" >
+                <ul>
+                    <span><i class="fa fa-flag" aria-hidden="true"style="color:#FF0000"></i>每日签到</span>
+                    <span>|</span>
+                    <span>我的订单</span>
+                    <span>|</span>
+                    <span class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"style="color:#000000">个人中心<b class="caret"></b>
+                                </a>
+                <ul class="dropdown-menu">
+					<li><a class="text-center" href="#">我的优惠券</a></li>
+					<li><a class="text-center" href="#">我的考拉豆</a></li>
+                                        <li class="divider"></li>
+					<li><a class="text-center" href="#">我的实名认证</a></li>
+                                        <li class="divider"></li>
+                                        <li><a class="text-center" href="#">我收藏的商品</a></li>
+					<li><a class="text-center" href="#">我关注的品牌</a></li>
+                                        <li class="divider"></li>
+					<li><a class="text-center" href="#">售后管理</a></li>
+                </ul>
+                    </span>
+                
+                    <span>|</span>
+                    <span class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"style="color:#000000">客户服务<b class="caret"></b>
+                                </a>
+                <ul class="dropdown-menu">
+                    <li><span style="padding-left:40px;"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span><span><a href="#"style="color:#000000">联系客服</a></span></li>
+					<li ><span style="padding-left:40px;"><i class="fa fa-question-circle fa-fw " aria-hidden="true"></i></span><span><a href="#"style="color:#000000">帮助中心</a></span></li>
+                </ul></span>
+                    <span>|</span>
+                    <span class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"style="color:#000000">充值中心<b class="caret"></b>
+                                </a>
+                <ul class="dropdown-menu">
+					<li><a class="text-center"href="#">话费流量</a></li>
+					<li><a class="text-center"href="#">游戏充值</a></li>
+                </ul></span>
+                    <span>|</span>
+                    <span>消费者告知书</span>
+                    <span>|</span>
+                     <span class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"style="color:#000000">更多<b class="caret"></b>
+                                </a>
+                <ul class="dropdown-menu">
+					<li>
+                                            <a class="text-center"href="#">收藏本站</a>
+                                            
+                                        </li>
+                                        <li class="divider"></li>
+					
+                                                <li>
+                                            
+                                            <a  class="text-center" href="#" >新浪微博</a>
+                                            <img class="floating_left_01" src="picture/weibo.jpg" >
+                                          
+                                           </li>
+                                         
+                                            
+                                            
+                                        
+					<li><a class="text-center"href="#">微信公众号</a>
+                                         <img class="floating_left_02" src="picture/weixin.jpg" >
+                                        </li>
+                                        <li><a class="text-center"href="#">易信公众号</a>
+                                         <img class="floating_left_03" src="picture/yixin.jpg" >
+                                        </li>
+                                        <li class="divider"></li>
+					<li><a class="text-center"href="#">招商合作</a></li>
+                                        <li class="divider"></li>
+					<li><a class="text-center"href="#">考拉招聘</a></li>
+                </ul>
+               </span>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    <!-- LOGO/搜索/购物车 -->
+    <div class="container">
+    <div class="row" >
+        <div class="col-md-3" >
+           <img src="picture/kaola_logo.jpg">
+        </div>
+        <div class="col-md-6" >
+            <div class="col-md-9">
+             <input type="text" class="form-control" placeholder="基本信息"style="width:400px;height:30px;"> 
+             
+             <span>洗面奶</span><span>|</span> <span>面膜</span><span>|</span> <span>MK</span><span>|</span> <span>眼霜</span><span>|</span><span>防晒</span><span>|</span><span>麦片</span><span>|</span><span>胶原蛋白</span>
+             <span>|</span><span>电动牙刷</span><span>|</span><span>口红</span></div>
+            <div class="col-md-3">
+            <i class="fa fa-search fa-2x " aria-hidden="true"  ></i>
+            </div>
+        </div>
+        <div class="col-md-3" >
+                         <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span > 购物车</span>
+                         </div>
+    </div>
+    </div>     
+   <!-- 导航条 -->
+ <div class="container">
+    <div class="row" >
+        <div class="col-md-12" >
+       <ul class="nav nav-tabs">
+	
+            <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background:#000000;color:#FFFFFF;font-weight:bold;">
+                                    所有分类
+					<b class="caret"></b>
+                                </a>
+                <ul class="dropdown-menu">
+					<li>
+                                            <a href="#"style="background:#000000;color:#FFFFFF;font-weight:bold;">母婴儿童</a>
+                                           
+                                                <table border="0" class="floating_right">
+                                                    <tr>
+                                                        <td style="padding:10px;">
+                                                           <strong>奶粉</strong> 
+                                                              <br>                 
+                                                        <span>爱他美</span><span>|</span><span>牛栏</span><span>|</span><span>hero baby</span><span>|</span><span>喜宝</span>
+                                                        <br>                                                   
+                                                        <span>贝拉米</span><span>|</span><span>美素佳儿</span><span>|</span><span>美林</span><span>|</span><span>a2</span><span>|</span><span>惠氏</span>
+                                                    <br>                                                    
+                                                        <span>雅培</span><span>|</span><span>美赞臣</span><span>|</span><span>合生元</span><span>|</span><span>Pre段</span><span>|</span><span>1段</span>
+                                                   <br>
+                                                        <span>爱他美</span><span>|</span><span>牛栏</span><span>|</span><span>hero baby</span><span>|</span><span>喜宝</span>
+                                                   <br> 
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>纸尿裤/拉拉裤</strong>
+                                                                                  <br>                                                                     
+                                                              <span>花王</span><span>|</span><span>尤尼加</span><span>|</span><span>大王</span><span>|</span><span>好奇</span>
+                                                        <br>                                                   
+                                                        <span>帮宝适</span><span>|</span><span>班博</span><span>|</span><span>丽贝乐</span><span>|</span><span>宝松怡</span><span>|</span><span>NB号</span>
+                                                    <br>                                                    
+                                                        <span>S号</span><span>|</span><span>M号</span><span>|</span><span>L号</span><span>|</span><span>XL号</span><span>|</span><span>XXL号</span>
+                                                   <br>                                                     
+                                                        </td>
+                                                    </tr>
+                                                      <tr>
+                                                        <td style="padding:10px;">
+                                                            <strong>营养辅食</strong>                     
+                                                              <br>                  
+                                                     <span>辅食泥</span><span>|</span><span>米粉米糊</span><span>|</span><span>泡芙</span><span>|</span><span>溶溶豆</span>
+                                                        <br>                                                   
+                                                        <span>营养品</span><span>|</span><span>饼干</span><span>|</span><span>肉松面仔</span><span>|</span><span>调味品</span><span>|</span><span>其他辅食</span>
+                                                    <br>                                                 
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>宝宝用品</strong> 
+                                                                                  <br>                 
+                                                        <span>洗漱护肤</span><span>|</span><span>护理</span><span>|</span><span>喂养</span><span>|</span><span>出行</span>
+                                                        <br>                                                   
+                                                        <span>文具图书</span><span>|</span><span>积木</span><span>|</span><span>益智玩具</span><span>|</span><span>其他玩具</span>
+                                                    <br>                                                    
+                                                        <span>宝宝家居</span><span>|</span><span>小家电</span>
+                                                     </td>
+                                                    </tr>
+                                                </table>
+                                                                                                                                        
+                                          
+                                        
+                                                
+                                                                                                
+                                                                                                      
+                                                 
+                                                                                                                                                                                          
+                                        </li>
+					<li><a href="#"style="background:#000000;color:#FFFFFF;font-weight:bold;">美容彩妆</a>
+                                       
+                                   
+                                                <table border="0" class="floating_right">
+                                                    <tr>
+                                                        <td style="padding:10px;">
+                                                           <strong>护肤</strong> 
+                                                              <br>                 
+                                                        <span>洁面</span><span>|</span><span>卸妆</span><span>|</span><span>爽肤水</span><span>|</span><span>面霜</span>
+                                                        <br>                                                   
+                                                        <span>精华</span><span>|</span><span>乳液</span><span>|</span><span>手足护理</span><span>|</span><span>身体护理</span>
+                                                    <br>                                                    
+                                                        <span>面部护理</span><span>|</span><span>护肤套装</span><span>|</span><span>男士面膜</span><span>|</span>
+                                                   <br>
+                                                        <span>精油治疗</span><span>|</span><span>面部护肤</span><span>|</span><span>男士护肤</span>
+                                                   <br> 
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>面膜</strong>
+                                                                                  <br>                                                                     
+                                                              <span>可莱斯</span><span>|</span><span>森田药妆</span>
+                                                        <br>                                                   
+                                                        <span>丽得姿</span><span>|</span><span>SNP</span><span>|</span><span>我的心机</span>
+                                                                                                    
+                                                        </td>
+                                                    </tr>
+                                                      <tr>
+                                                        <td style="padding:10px;">
+                                                            <strong>彩妆</strong>                     
+                                                              <br>                  
+                                                     <span>BB霜</span><span>|</span><span>唇膏</span><span>|</span><span>唇彩</span><span>|</span><span>粉底</span>
+                                                        <br>                                                   
+                                                                                                       
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>防晒修复</strong> 
+                                                                                  <br>                 
+                                                        <span>露得清</span><span>|</span><span>近江兄弟</span><span>|</span><span>曼秀雷墩</span><span>|</span><span>碧柔</span>
+                                                        <br>                                                   
+                                                    
+                                                     </td>
+                                                    </tr>
+                                                </table>
+                                                                                                                                        
+                                        
+                                               
+                                        
+                                        
+                                        </li>
+					<li><a href="#"style="background:#000000;color:#FFFFFF;font-weight:bold;">服饰鞋包</a>  
+                                                  <table border="0" class="floating_right">
+                                                    <tr>
+                                                        <td style="padding:10px;">
+                                                           <strong>女士箱包</strong> 
+                                                              <br>                 
+                                                        <span>斜跨包</span><span>|</span><span>手提包</span><span>|</span><span>手拿包</span><span>|</span><span>双肩包</span>
+                                                        <br>                                                   
+                                                        <span>化妆包</span><span>|</span><span>钱包</span><span>|</span><span>附件包</span>
+                                                    
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>服饰内衣</strong>
+                                                                                  <br>                                                                     
+                                                              <span>男装</span><span>|</span><span>女装</span>
+                                                        <br>                                                   
+                                                        <span>睡衣</span><span>|</span><span>内衣</span><span>|</span><span>丝袜</span>
+                                                                                                    
+                                                        </td>
+                                                    </tr>
+                                                      <tr>
+                                                        <td style="padding:10px;">
+                                                            <strong>男士箱包</strong>                     
+                                                              <br>                  
+                                                       <span>斜跨包</span><span>|</span><span>手拿包</span><span>|</span><span>双肩包</span>
+                                                        <br>                                                   
+                                                        <span>商务包</span><span>|</span><span>钱包</span><span>|</span><span>卡包</span>                                                 
+                                                                                                       
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>鞋</strong> 
+                                                                                  <br>                 
+                                                        <span>女鞋</span><span>|</span><span>男鞋</span><span>|</span><span>户外鞋</span>
+                                                        <br>                                                   
+                                                    
+                                                     </td>
+                                                    </tr>
+                                                </table>
+                                        </li>
+                                        <li><a href="#"style="background:#000000;color:#FFFFFF;font-weight:bold;">家居个护</a>                                         
+					      <table border="0" class="floating_right">
+                                                    <tr>
+                                                        <td style="padding:10px;">
+                                                           <strong>女性护理</strong> 
+                                                              <br>                 
+                                                        <span>卫生巾</span><span>|</span><span>护垫</span><span>|</span><span>卫生棉条</span><span>|</span><span>私处洗液</span>
+                                                       
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>宠物生活</strong>
+                                                                                  <br>                                                                     
+                                                              <span>宠物主粮</span><span>|</span><span>宠物零食</span>
+                                                        <br>                                                   
+                                                        <span>宠物玩具</span><span>|</span><span>宠物医疗保障</span><span>|</span><span>宠物玩具</span>
+                                                                                                    
+                                                        </td>
+                                                    </tr>
+                                                      <tr>
+                                                        <td style="padding:10px;">
+                                                            <strong>家装家纺</strong>                     
+                                                              <br>                  
+                                                     <span>枕头</span><span>|</span><span>床上用品</span><span>|</span><span>毛巾浴巾</span><span>|</span><span>浴袍</span>
+                                                        <br>                                                   
+                                                                                                       
+                                                        </td>
+                                                        <td style="padding:10px;">
+                                                            <strong>其他个户</strong> 
+                                                                                  <br>                 
+                                                        <span>眼罩</span><span>|</span><span>口罩</span><span>|</span><span>避孕套</span><span>|</span><span>女用器具</span>
+                                                        <br>                                                   
+                                                    
+                                                     </td>
+                                                    </tr>
+                                              </table></li>
+               
+                </ul>
+	    </li>
+       
+	<li><a href="#"style="background:#FFFFFF;color:#000000;font-weight:bold;">首页</a></li>
+	<li><a href="#"style="background:#FFFFFF;color:#000000;font-weight:bold;">今日限时购</a></li>
+	<li><a href="#"style="background:#FFFFFF;color:#000000;font-weight:bold;">每日上新</a></li>
+        <li><a href="#"style="background:#FFFFFF;color:#000000;font-weight:bold;">国家馆</a></li>
+         <li><a href="#"style="background:#FFFFFF;color:#000000;font-weight:bold;">全球旗舰</a></li>
+    
+        </ul>
+           </div>
+    </div>
+      </div>
+    
+           <div id="myCarousel" class="carousel slide">
+	<!-- 轮播（Carousel）指标 -->
+               <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+	       </ol>   
+	<!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner" style="margin-left:auto;">
+		<div class="item active">
+			<img src="picture/xinrendalibao.jpg" alt="First slide">	
+		</div>
+		<div class="item">
+			<img src="picture/xinrenzhuanxiang.jpg" alt="Second slide">
+		</div>
+		
+		</div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel" style="background:rgba(0,0,0,0);" 
+	   data-slide="prev"><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true"style="margin-left: 200px;margin-top: 120px;"></i></a>
+	<a class="carousel-control right" href="#myCarousel" style="background:rgba(0,0,0,0);" 
+        data-slide="next"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"style="margin-right: 200px;margin-top: 120px;"></i>;
+    </a>
+           </div>
+    <!-- 优惠券 -->
+
+    <div class="container"style="padding-top: 10px;">
+    <div class="row" >
+        <div class="col-md-12" >
+        <span>
+            <img src="picture/10youhui.jpg" >
+        </span>
+             <span>
+            <img src="picture/20youhui.jpg" >
+        </span>
+             <span>
+            <img src="picture/30youhui.jpg" >
+        </span>
+             <span>
+            <img src="picture/40youhui.jpg" >
+        </span>
+             <span>
+            <img src="picture/huafeichongzhi.jpg" >
+        </span>
+             <span>
+            <img src="picture/gengduoyouhui.jpg" >
+        </span>
+        </div>
+        </div></div>
+        
+      
+     <!-- 花少同款 -->
+    <div class="container" style="background:#FF6A6A; margin-top:30px;">
+    <div class="row" >
+        <div class="col-md-12" >
+            <h3 class="text-center" id="huashaotongkuan">☆ 花少同款 ☆</h3>
+        </div>
+    </div>
+    </div>
+     <!-- 花少同款的商品 -->
+      <div class="container" >
+   
+            <div class="row" >
+                  <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1357063.html">
+      <img src="picture/p_1.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1357063.html">【娜扎同款】RE:CIPE 水晶防晒喷雾 150毫升</a></div>
+  </div>
+    <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1491970.html">
+      <img src="picture/p_2.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1491970.html">【娜扎同款】NARIS UP 娜丽丝 UV防晒喷雾 90克</a></div>
+  </div>
+                 <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1534332.html">
+      <img src="picture/p_3.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1534332.html">【娜扎同款】RE:CIPE 水晶防晒喷雾 150毫升 3瓶装</a></div>
+  </div>
+                 <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1357063.html">
+      <img src="picture/p_4.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1492532.html">Kao 花王 蒸汽眼罩 洋甘菊香型14片</a></div>
+  </div>
+           
+   
+            </div></div>
+     
+           <!-- 20元起包邮 -->
+    <div class="container" style="background:#FF6A6A ;margin-top:30px;">
+    <div class="row" >
+        <div class="col-md-12" >
+            <h3 class="text-center"id="20yuanqibaoyou">☆ 20元起包邮 ☆</h3>
+        </div>
+    </div>
+    </div>
+     <!-- 20元起包邮 -->
+      <div class="container" >
+   
+            <div class="row" >
+                  <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1357063.html">
+      <img src="picture/p_1.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1357063.html">【娜扎同款】RE:CIPE 水晶防晒喷雾 150毫升</a></div>
+  </div>
+    <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1491970.html">
+      <img src="picture/p_2.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1491970.html">【娜扎同款】NARIS UP 娜丽丝 UV防晒喷雾 90克</a></div>
+  </div>
+                 <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1534332.html">
+      <img src="picture/p_3.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1534332.html">【娜扎同款】RE:CIPE 水晶防晒喷雾 150毫升 3瓶装</a></div>
+  </div>
+                 <div class="col-md-3" >
+    <a target="_blank" href="http://www.kaola.com/product/1357063.html">
+      <img src="picture/p_4.jpg" >
+    </a>
+                      <div class="desc"><a target="_blank" href="http://www.kaola.com/product/1492532.html">Kao 花王 蒸汽眼罩 洋甘菊香型14片</a></div>
+  </div>
+           
+   
+            </div></div>
+          
+            <!-- 更多精品好货 -->
+          <div class="container"style="margin-top:30px;" >
+    <div class="row" >
+        <div class="col-md-12" >
+            <a target="_blank" href="http://www.kaola.com/?ri=20857&rt=picture&zid=zid_9821783015&zp=picture1&zn=%E6%9B%B4%E5%A4%9A">
+                <img class="img-responsive center-block" src="picture/more.jpg" style="border-style:solid;	border-width:5px; border-radius: 6px;" id="gengduojingpin" ></a>
+        </div>
+    </div>
+    </div>
+          <!-- 网易保障 -->
+             <div class="container"style="margin-top:30px;" >
+    <div class="row" >
+        <div class="col-md-12" >
+            <a target="_blank" href="http://www.kaola.com/?ri=20857&rt=picture&zid=zid_9821783015&zp=picture1&zn=%E6%9B%B4%E5%A4%9A">
+                <img class="img-responsive center-block" src="picture/wangyibaozhang.jpg"  ></a>
+        </div>
+    </div>
+    </div>
+          <!-- 正品保证 -->
+          <div class="container" style="margin-top:30px;" >
+            <div class="row" >
+                  <div class="col-md-1" >
+                      <i class="fa fa-quora fa-3x" aria-hidden="true"></i>
+                  </div>
+                      <div class="col-md-2" >
+                         
+                           <strong>100%正品保证
+                           </strong>
+                      <br>正品保障 假一赔十<br>
+                      
+                       </div>
+                  
+            
+                  <div class="col-md-1" >
+                      <i class="fa fa-plane fa-3x" aria-hidden="true"></i>
+                  </div>
+                      <div class="col-md-2" >
+                         
+                           <strong>低价保障
+                           </strong>
+                      <br>缩减中间环节 确保低价<br>
+                      
+                       </div>
+                    
+                   
+                  <div class="col-md-1" >
+                      <i class="fa fa-registered fa-3x" aria-hidden="true"></i>
+                  </div>
+                      <div class="col-md-2" >
+                         
+                           <strong>30天无忧退货
+                           </strong>
+                      <br>国内退货 售后无忧<br>
+                      
+                       </div>
+                        
+                     
+                  <div class="col-md-1" >
+                      <i class="fa fa-yahoo fa-3x" aria-hidden="true"></i>
+                  </div>
+                      <div class="col-md-2" >
+                         
+                           <strong>满88包邮
+                           </strong>
+                      <br>部分特殊商品除外<br>
+                      
+                       </div>
+
+           
+   
+                        </div></div>
+        <!-- 右侧边栏 -->
+        
+          <div class="floating_ck">
+             
+	<dl>
+    	<dt></dt>
+        <dd class="huashaotongkuan">
+            <span><a href="#huashaotongkuan" style="color:#FFFFFF">花少同款</a></span>
+        	
+        </dd>
+        <dd class="20yuanqibaoyou">
+        	<span><a href="#20yuanqibaoyou"style="color:#FFFFFF">20元起包邮</a></span>
+            
+        </dd>
+        <dd class="gengduojingpin">
+        	<span><a href="#gengduojingpin"style="color:#FFFFFF">更多精品</a></span>
+           
+        </dd>
+        
+        <dd class="return">
+        	<span onClick="gotoTop();return false;"style="color:#FFFFFF">返回顶部</span>
+        </dd>
+    </dl>
+</div>
+          <!-- footer -->
+           <div class="container" style="margin-top:30px;" >
+            <div class="row" >
+                 <div class="col-md-3" >
+                     
+                     <a target="_blank" href="http://www.kaola.com/?zn=footer">
+                         <img src="picture/kaola_logo.jpg" ></a>
+            <br>关注我们<i class="fa fa-weibo fa-2x" aria-hidden="true"style="color:#FF0000;padding-left:10px;"></i><i class="fa fa-weixin fa-2x" aria-hidden="true"style="color:#00FF00;padding-left: 10px;"></i><br>
+                 </div> 
+                <div class="col-md-1" >
+                    <br><strong>考拉保障</strong><br>
+                    <br>假一赔十<br>
+                    <br>廉正监督<br>
+                </div>
+                 <div class="col-md-1" >
+                    <br><strong>新手指南</strong><br>
+                    <br>购物流程<br>
+                    <br>支付方式<br>
+                    <br>通关税费<br>
+                    <br>常见问题<br>
+                </div>
+                <div class="col-md-1" >
+                    <br><strong>售后服务</strong><br>
+                    <br>退货政策<br>
+                    <br>退货流程<br>
+                    <br>退款说明<br>
+                    <br>联系客服<br>
+                </div>
+                <div class="col-md-1" >
+                    <br><strong>物流配送</strong><br>
+                    <br>配送方式<br>
+                    <br>配送服务<br>
+                    <br>运费标准<br>
+                    <br>物流跟踪<br>
+                </div>
+                <div class="col-md-1" >
+                    <br><strong>关于我们</strong><br>
+                    <br>联系我们<br>
+                    <br>招商合作<br>
+                    <br>销售联盟<br>
+                    <br>CEO邮箱<br>
+                </div>
+                 <div class="col-md-2" >
+                     
+                     <a target="_blank" href="http://www.kaola.com/activity/guohang/index.html">
+                         <img src="picture/fenghuangzhiyin.png" ></a>
+                          <br>考拉联合凤凰知音<br>
+                 </div> 
+                <div class="col-md-2" >
+                  
+                         <img src="picture/xiazaishouji.jpg" >
+         <br>扫描下载手机版<br>
+                 </div> 
+</body>
+</html>
+
+
+
